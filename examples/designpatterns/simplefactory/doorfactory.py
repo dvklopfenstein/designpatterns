@@ -1,7 +1,7 @@
 """Factory to make a door"""
 
-from designpatterns.simplefactory.door import Door
-from designpatterns.simplefactory.door import WoodenDoor
+from examples.designpatterns.simplefactory.door import Door
+from examples.designpatterns.simplefactory.door import WoodenDoor
 
 
 # pylint: disable=too-few-public-methods

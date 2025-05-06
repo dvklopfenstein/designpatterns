@@ -1,6 +1,6 @@
 """Make doors using factory"""
 
-from designpatterns.simplefactory.doorfactory import DoorFactory
+from examples.designpatterns.simplefactory.doorfactory import DoorFactory
 
 
 def main():

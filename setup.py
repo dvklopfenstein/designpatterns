@@ -10,8 +10,8 @@ from os.path import dirname
 from setuptools import setup
 
 PACKAGES = [
-    'designpatterns',
-    'designpatterns.simplefactory',
+    'examples.designpatterns',
+    'examples.designpatterns.simplefactory',
 ]
 
 PACKAGE_DIRS = {p:join(*p.split('.')) for p in PACKAGES}
@@ -23,16 +23,11 @@ def get_long_description():
         return ifstrm.read().decode("UTF-8")
 
 CONSOLE_SCRIPTS = [
-    'trk=designpatterns.cli:main',
-    'timestr=designpatterns.epoch.cli:main',
+    'simplefactory=examples.designpatterns.simplefactory.doorfactory:main',
+    'access=examples.accessmodifiers:main',
 ]
 
-REQUIRES = [
-]
 
-KEYWORDS = [
-    "Design Patterns",
-]
 
 setup(
     # The name of the project on PyPi
@@ -52,7 +47,6 @@ setup(
         'Environment :: Console',
         'Intended Audience :: Science/Research',
         'Development Status :: 1 - Planning',
-        'License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)',
         'Programming Language :: Python :: 3',
         'Topic :: Office/Business :: Financial :: Spreadsheet',
     ],
@@ -61,10 +55,6 @@ setup(
                 "that stores data in csv files",
     long_description=get_long_description(),
     long_description_content_type='text/markdown',
-    install_requires=REQUIRES,
-    # Needed for assignment expressions & the walrus operator
-    python_requires='>=3.8',
-    keywords=KEYWORDS,
 )
 
 # Copyright (C) 2025-present, DV Klopfenstein, PhD. All rights reserved
