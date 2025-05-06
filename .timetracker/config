@@ -1,6 +1,6 @@
 # TimeTracker project configuration file
 
-project = "designpatterns"
+project = "sandbox"
 
 [csv]
-filename = "~/timetrackers/timetracker_designpatterns_$USER$.csv"
+filename = "~/timetrackers/timetracker_sandbox_$USER$.csv"
