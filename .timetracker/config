@@ -3,4 +3,4 @@
 project = "designpatterns"
 
 [csv]
-filename = "./timetracker_designpatterns_$USER$.csv"
+filename = "~/timetrackers/timetracker_designpatterns_$USER$.csv"
